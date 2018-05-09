@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>fullPage</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            color: #0F0E0D;
+        }
+        .page {
+            height: 100vh;
+        }
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 20vh;
+        }
+        section:nth-child(1) {
+            background: #F1AF22;
+        }
+        section:nth-child(2) { 
+            background: #356ADA; 
+        }
+        section:nth-child(3) { 
+            background: #D82220; 
+        }
+        section:nth-child(4) { 
+            background: #08AA37; 
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </div>
+
+    <script src="../lib/fullPage.js"></script>
+    <script>
+        new fullPage({
+            element: document.querySelector('body > .page')
+        })
+    </script>
+</body>
+</html>
