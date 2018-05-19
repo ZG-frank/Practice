@@ -6,34 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Index</title>
     <style>
+        body { 
+            display: flex; 
+            justify-content: center;
+            margin: 0;
+            min-height: 100vh; 
+        }
         a { 
             text-decoration: none; 
             border-bottom: 1px solid;
         }
-        /* * { 
-            box-sizing: border-box;
-        } */
-        body { 
-            margin: 0;
-            min-height: 100vh; 
-            display: flex; 
-            justify-content: center; 
-        }
         .page { 
-            margin: 2em; 
+            margin: 30px;
+            padding: 20px;
             border: 1px solid #ddd; 
-            padding: 0 1em;
-            width: 36em; 
+            width: 500px; 
             box-shadow: 3px 3px 6px hsla(0,0%,0%,0.1);
         }
         ol > li { 
-            padding:.2em .5em; 
+            padding: 4px 8px; 
         }
-        ol > li:hover { 
+        ol > li > a:hover { 
             background:#ddd; 
-        }
-        ol > li .difficulty { 
-            float: right; 
         }
     </style>
 </head>
@@ -51,7 +45,7 @@
             </li>
             <li>
                 <a href="../page/fullpage.html">
-                    fullPage
+                    fullPage 组件
                 </a>
             </li>
         </ol>
