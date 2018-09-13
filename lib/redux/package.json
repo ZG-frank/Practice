@@ -1,0 +1,34 @@
+{
+  "name": "redux-app",
+  "version": "1.0.0",
+  "description": "test redux",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development --progress --config build/dev.js --hot --open",
+    "build": "webpack --mode production --progress --config build/prod.js"
+  },
+  "keywords": [
+    "redux"
+  ],
+  "author": "frankzgzhou",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  }
+}
